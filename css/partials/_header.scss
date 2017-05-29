@@ -1,0 +1,133 @@
+.mainHeader {
+	height: 100vh;
+	@extend .centerAlignFlex;
+
+	background: url("../images/hero.jpg");
+	background-size: cover;
+    background-attachment: fixed;
+	background-position: center center;
+	position: relative;
+
+		&::before {
+		@include pseudo(100%, 100%, rgba(0,0,0,0.6));
+		}
+
+	@media (max-width: $md){
+		height:600px;
+	}
+}
+
+header .nav {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.nav__container{
+
+	display: flex;
+	flex-direction: row;
+
+	@media (max-width: $md){
+		display: none;
+		position: fixed;
+		right: 0;
+		top: 50px;
+		width: 100%;
+		flex-direction: column;
+		z-index: 10;
+	}
+}
+
+
+.nav__links{
+	display: flex;
+	flex-direction: row;
+
+	li { 
+		margin: 1rem;
+		}
+}
+
+.mainHeader .nav__links{
+	@media (max-width: $md){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		background-color: rgba(0,0,0,0.9);
+	}
+}
+
+
+.adminNav__links {
+	display: flex;
+	flex-direction: row;
+	li {
+		margin: 1rem;
+	}
+
+	@media (max-width: $md){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		background-color: rgba(0,0,0,0.9);
+	}
+}
+
+
+.heroText {
+	@extend .centerAlignFlex;
+	margin: auto;
+	text-align: center;
+}
+
+
+.scrollerImage {
+	text-align: center;
+	margin: 1%;
+	img {
+		width: 20px;
+	}
+}
+
+.sliderArrows {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right:0;
+}
+
+// --------Burger menu ----------- //
+.burger-shower {
+  display: none;
+}
+
+.burger-shower:checked ~ .nav__container {
+  display: flex;
+}
+
+.hamburger {
+	display:none;
+
+	@media (max-width: $md){
+		display: block;
+		margin: 0.5rem;
+		width: 2rem;
+		height: 2rem;
+		line-height: .1em;
+		padding: 0.5rem;
+		text-align: center;
+		color: $white;
+	}
+}

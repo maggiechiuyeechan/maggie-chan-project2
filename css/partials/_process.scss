@@ -1,0 +1,47 @@
+.process {
+	background-color: $white;
+	@extend .centerAlignFlex;
+}
+
+.process__container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+	@media (max-width: $sm){
+		flex-direction:column;
+	}
+}
+
+.process__item {
+	width: 30%;
+	justify-content: flex-end;
+	display: flex;
+	text-align: left;
+	position: relative;
+	@media (max-width: $sm){
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.process_itemText{
+		width: 70%;
+		z-index: 1;
+		h3 {
+			margin-top: 2.4rem;
+		}
+		p {
+			margin-top: 1rem;
+		}
+	}
+}
+
+.process button {
+	align-self: center;
+
+}

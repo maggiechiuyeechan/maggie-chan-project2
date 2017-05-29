@@ -1,0 +1,55 @@
+
+// SETTINGS
+
+
+// MIXINS
+@import "partials/mixins";
+
+// GENERIC
+@import "partials/setup";
+
+// Colors
+@import "partials/colors";
+
+// Typography
+@import "partials/typography";
+
+// BASE
+@import "partials/general";
+
+// PATTERNS
+// Wrappers and constraining elements
+@import "partials/wrappers";
+@import "partials/buttons";
+@import "partials/forms";
+
+// SECTIONS
+@import "partials/header";
+@import "partials/whatWeDo";
+@import "partials/process";
+@import "partials/shop";
+@import "partials/progress";
+@import "partials/testimonials";
+@import "partials/projects";
+@import "partials/getInTouch";
+@import "partials/blog";
+@import "partials/contact";
+@import "partials/footer";
+
+// html {
+// 	@media (max-width: $xl){
+// 		background: blue;
+// 	}
+// 	@media (max-width: $lg){
+// 		background: purple;
+// 	}
+// 	@media (max-width: $md){
+// 		background: orange;
+// 	}
+// 	@media (max-width: $sm){
+// 		background: yellow;
+// 	}
+// 	@media (max-width: $xs){
+// 		background: green;
+// 	}
+

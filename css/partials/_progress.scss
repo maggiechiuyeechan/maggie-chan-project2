@@ -1,0 +1,47 @@
+.progress {
+	background: url("../images/progress_bg.jpg");
+	background-size: cover;
+    background-attachment: fixed;
+	background-position: center center;
+	padding:0;
+	position: relative;
+		&::before {
+		@include pseudo(100%, 100%, rgba(0,0,0,0.6));
+		}
+}
+
+.progressContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	@media (max-width: $xs){
+		flex-direction: column;
+	}
+
+	.progress__items {
+		margin-bottom: 5rem;
+		margin-top: 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: $sm){
+			width: 35%;
+		}
+		@media (max-width: $xs){
+			width: 50%;
+			margin: 3rem;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	h5 {
+		margin-top: 1rem;
+	}
+}

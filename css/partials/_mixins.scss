@@ -1,0 +1,45 @@
+// ------------------------------------
+  // Responsive media queries
+// ------------------------------------
+
+// breakpoint variables
+$xl: 1400px;
+$lg: 1220px;
+$md: 1000px;
+$sm: 850px;
+$xs: 600px;
+
+@mixin respFont-size($xs-TypeSize, $sm-TypeSize, $md-TypeSize, $lg-TypeSize, $xl-TypeSize){
+	font-size: $xs-TypeSize;
+}
+
+// @mixin fluid-type($min-font-sizepx, $min-font-size, $max-font-size) {
+//   font-size: calc($min-font-sizepx + ($max-font-size - $min-font-size) * ((100vw - $xs) / ($xlg - $xs)));
+// }
+
+@mixin pseudo($width, $height, $bgcolor, $display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+	width: $width;
+	height: $height;
+	background-color: $bgcolor;
+}
+
+@mixin square-box($width){
+    position: relative;
+    width: $width;
+    overflow: hidden;
+    background: none;
+    &::before{
+    	content: "";
+	    display: block;
+	    padding-top: 100%;
+    }
+}
+
+.centerAlignFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

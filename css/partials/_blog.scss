@@ -1,0 +1,42 @@
+.blog {
+	@extend .centerAlignFlex;
+}
+
+.blogContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 3rem;
+	
+	@media (max-width: $md){
+		flex-direction: column;
+	}
+}
+
+.blogItem {
+	width: 31%;
+	background-color: $white;
+
+	img { 
+		width: 100%;
+	}
+
+	@media (max-width: $md){
+		width: 100%;
+		margin-top: 1rem;
+	}
+}
+
+.blogItem__text {
+	padding: 2rem;
+	text-align: left;
+
+	.blogDate {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	h2, p, button {
+		margin-top: 1.25rem;
+	}
+}

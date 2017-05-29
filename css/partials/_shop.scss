@@ -1,0 +1,114 @@
+.shop {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: $bgDarkGrey;
+
+	@media (max-width: $sm){
+		flex-direction: column;
+	}
+}
+
+
+.shopButtonContainer {
+	display: flex;
+	flex-direction: column;
+
+	@media (max-width: $sm){
+		flex-direction: row;
+	}
+}
+
+.shop__Hero {
+	width: 65%;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	
+	@media (max-width: $sm){
+		flex-direction: column;
+		width: 100%;
+		padding: 2rem;
+	}
+
+	.shop__HeroText {
+		width: 45%;
+		padding-left: 1rem;
+
+		@media (max-width: $sm){
+			margin-top: 3rem;
+			width: 80%;
+			text-align: center;
+		}
+	}
+
+	p {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	img {
+		width: 50%;
+		max-height:400px;
+
+		@media (max-width: $sm){
+			width: 80%;
+		}
+	}
+}
+
+.shop__Button {
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+	background-color: $white;
+	transition: background-color 0.25s ease-in-out;
+	border: 1px solid $bgDarkGrey;
+	text-align: left;
+
+	@media (max-width: $sm){
+		width: 33.3%;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	img {
+		height: 3vw;
+
+		@media (max-width: $sm){
+		height: 5vw;
+		}
+	}
+
+	.shop__ButtonText {
+		margin: 1rem;
+		h6 {
+			margin-top: 0.5rem;
+		}
+	}
+}
+
+.shop__Button:hover {
+	background-color:  $bgDarkGrey;
+	position: relative;
+		&:after{
+			@include pseudo(10px, 100%, $black);
+			top: 0;
+			left: 0;
+			}
+	@media (max-width: $sm){
+			&:after{
+				@include pseudo(100%, 10px, $black);
+				top: 0;
+				left: 0;
+			}
+	}
+}
+
+.blackButton{
+	@media (max-width: $sm){
+		display: inline-block;
+	}
+}

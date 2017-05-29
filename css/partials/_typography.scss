@@ -1,0 +1,191 @@
+$primaryFontFamily: "Open Sans", Helvetica, Arial, sans-serif;
+$titleFontFamily: "Montserrat", Helvetica, Arial, sans-serif;
+
+ 
+html {
+	font-size: 20px;
+	@media (max-width: $xl){
+		font-size: 20px;
+	}
+	@media (max-width: $lg){
+		font-size: 17px;
+	}
+	@media (max-width: $md){
+		font-size: 16px;
+	}
+	@media (max-width: $sm){
+		font-size: 16px;
+	}
+	@media (max-width: $xs){
+		font-size: 16px;
+	}
+}
+
+
+// ------------------------------------
+  // BASE TYPOGRAPHY
+// ------------------------------------
+
+
+body {
+	font-family: $primaryFontFamily;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 7.5rem;
+	color: $white;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+	margin: 0;
+		@media (max-width: $xl){
+			font-size: 7.5rem;
+		}
+		@media (max-width: $lg){
+			font-size: 7.5rem;
+		}
+		@media (max-width: $md){
+			font-size: 6rem;
+		}
+		@media (max-width: $sm){
+			font-size: 5rem;
+		}
+		@media (max-width: $xs){
+			font-size: 4rem;
+		}
+}
+
+
+
+h2 {
+	font-size: 1.2rem;
+	color: $black;
+	text-transform: uppercase;
+	font-family: $titleFontFamily;
+	letter-spacing: 0.2rem;
+
+	&.whiteFont{
+		font-size: 1.125rem;
+		letter-spacing: 0.5rem;
+		font-family: $primaryFontFamily;
+		font-weight: 300;
+			@media (max-width: $xs){
+				letter-spacing: initial;
+			}
+	}
+
+}
+
+
+h3 {
+	font-size:  0.9em;
+	color: $black;
+	text-transform: uppercase;
+	font-family: $titleFontFamily;
+	letter-spacing: 0.1rem;
+}
+
+
+h4 {
+	font-size: 0.9rem;
+	color: $grey;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	margin: 1rem;
+		@media (max-width: $xs){
+			font-size: 0.75rem;
+		}
+}
+
+
+h5 {
+	font-size: 0.75rem;
+	color: $black;
+	text-transform: uppercase;
+	font-family: $titleFontFamily;
+	letter-spacing: 0.1rem;
+	margin: 0;
+}
+
+
+h6, nav a{ 
+	font-size: 0.75rem;
+	color:$grey;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+}
+
+
+p {
+	color: $grey;
+	font-size: 0.8rem;
+	margin: 0;
+	line-height: 1.4rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.whiteFont{
+	color: $white;
+}
+
+.process__item span {
+	color: $bgDarkGrey;
+	font-size: 10rem;
+	margin: 0;
+	line-height: 0.8;
+	z-index: 0;
+	font-weight: 300;
+}
+
+footer li,
+.twitterItem i {
+	color: $grey;
+}
+
+.secondaryFooter h5 {
+	font-family: $titleFontFamily;
+	color: $grey;
+}
+
+// ------------------------------------
+  // LINKS AND HOVERS
+// ------------------------------------
+
+h5 a {
+	color: $darkGrey;
+}
+
+button,
+input[type="submit"] {
+	font-family: $titleFontFamily;
+	font-size: 0.75rem;
+	letter-spacing: 0.1rem;
+}
+
+.--smallButton {
+	font-size: 0.5rem;
+}
+
+.heroEmailInput {
+	font-size: 2.5rem;
+		@media (max-width: $xs){
+		font-size: 1.5rem;
+		}
+}
+
+.twitterItem a,
+.newsLetterButton,
+.newLetterEmail {
+	color: $lightGrey;
+}
+

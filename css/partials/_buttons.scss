@@ -1,0 +1,31 @@
+button,
+input[type="submit"] {
+	border: none;
+	padding: 0.8rem 2rem;
+	text-transform: uppercase;
+	display: block;
+	background-color: $buttonWhite;
+	transition: all 0.25s ease-in-out;
+}
+
+.blackButton {
+	color: $white;
+	background-color: $black;
+}
+
+.--smallButton {
+	padding: 0.5rem 1rem;
+}
+
+input[type="submit"] {
+	margin-top: 2rem;
+}
+
+.scrollerArrow {
+	background-color: $white;
+	padding: 30px;
+	text-align: center;
+		@media (max-width: $md){
+			padding: 15px;
+		}
+}

@@ -1,0 +1,72 @@
+.mainFooter {
+	background-color: $black;
+}
+
+.footerContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+.footer__item {
+	width: 24%;
+
+	@media (max-width: $sm){
+		width: 100%;
+		margin: 2rem;
+	}
+
+	h5 {
+		display: block;
+		border-bottom: 1px solid $grey;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
+.socialMediaIcons li{
+		display: inline-block;
+		margin-top: 0.5rem;
+		margin-right: 0.5rem;
+}
+
+.squareGallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 0.5rem;
+	li {
+		@include square-box(33.3%);
+			img {
+			   position:  absolute;
+			   top: 50%;
+			   left: 50%;
+			   height: 110%;
+			   transform: translate( -50%, -50%);
+		}
+	}
+}
+
+.twitterItem {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1rem;
+	i {
+		margin: 0.25rem;
+	}
+}
+
+.secondaryFooter {
+	background-color: $bgSecondaryFooter;
+	padding: 1rem;
+}
+
+.footerContentContainer{
+	display: flex;
+	justify-content: space-between;
+	h5, a {
+		padding-bottom: 0.5rem;
+	}
+}

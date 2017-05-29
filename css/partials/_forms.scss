@@ -1,0 +1,38 @@
+form {
+	margin-top: 3rem;
+	@extend .centerAlignFlex;
+
+}
+
+.contactForm input,
+.contactForm textarea { 
+	border: 1px solid $lightGrey;
+	padding: 0.8rem;
+	width: 100%;
+	text-align: left;
+}
+
+.heroEmailInput {
+	background: rgba(0,0,0,0);
+	border: none;
+	width: 85%;
+	text-align: center;
+	border-bottom: 1px solid $grey;
+	display: block;
+	color: $white;
+}
+
+.newsLetterButton {
+	border: none;
+	padding: 15px;
+	background-color: #565454;
+}
+
+.newsLetterEmail {
+	background: #353535;
+	border: none;
+	text-align: left;
+	color: $white;
+	padding: 15px;
+	width: calc(100% - 60px)
+}

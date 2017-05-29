@@ -1,0 +1,21 @@
+body {
+	margin: 0 auto;
+}
+.medWrapper{
+	width: 85%;
+	margin: 0 auto;
+	max-width: 1140px;
+	@media (max-width: $xs){
+		width: 75%;
+		flex-direction: column;
+	}
+}
+
+.smallWrapper {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 850px;
+	@media (max-width: $sm){
+		width: 90%;
+	}
+}
